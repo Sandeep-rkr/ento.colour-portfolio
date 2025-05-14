@@ -4,7 +4,6 @@ function toggleTheme() {
   const current = html.getAttribute('data-theme');
   html.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
 }
-
 document.getElementById('search').addEventListener('input', function () {
   const query = this.value.toLowerCase();
   const photos = document.querySelectorAll('.photo');
